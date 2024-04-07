@@ -13,6 +13,7 @@ services:
         protocol: tcp
   php:
     container_name: ti
+    restart: always
     build:
       context: .
       dockerfile: docker/Dockerfile
